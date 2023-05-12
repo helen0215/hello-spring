@@ -25,6 +25,7 @@ public class SpringConfig {
     @Bean
     public MemberRepository memberRepository() {
 //        return new MemoryMemberRepository();
+        // ㅇㅏ니 왜 이러는겨!
         return new JdbcMemberRepository(dataSource);
     }
 }
